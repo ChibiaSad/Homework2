@@ -5,6 +5,9 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
+        task7();
+        task8();
     }
 
     public static void task1(){
@@ -51,5 +54,25 @@ public class Main {
 
         System.out.printf("Увеличение годового дохода:\nМаша - %.0f рублей\nДенис - %.0f рублей\nКристина - %.0f рублей\n\n",
                 yearSalaryMasha2 - yearSalaryMasha1, yearSalaryDenis2 - yearSalaryDenis1, yearSalaryKris2 - yearSalaryKris1);
+    }
+
+    public static void task6(){
+        int a = 12, b = 27, c = 44, d = 15, e = 9;
+        int result = a * (b + (c - d * e));
+        System.out.println(-result + "\n");
+    }
+
+    public static void task7(){
+        int a = 5, b = 7;
+        a -= b;
+        b += a;
+        a = -(a - b);
+        System.out.printf("a: %d \nb: %d\n\n", a, b);
+    }
+
+    public static void task8(){
+        int a = 123;
+        int b = a%100/10;
+        System.out.println("b: " + b);
     }
 }
